@@ -1,0 +1,54 @@
+<html>
+<script language="javascript" src="emploi.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+
+<body>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th scope="col"></th>
+                <th scope="col"> 8:15 --> 10:15</th>
+                <th scope="col">10:30 --> 12:30</th>
+                <th scope="col">14:00 --> 16:00</th>
+                <th scope="col">16:15 --> 18:15</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">Lundi</th>
+                <td id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+
+                    <div id="dra1" draggable="true" ondragstart="drag(event)" ondragover="notAllowDrop(event)">
+                        <p onclick="catchIt">
+                            Matiere1
+                        </p>
+                    </div>
+
+                </td>
+
+                <td id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+
+
+                </td>
+                <td id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <div id="dra2" draggable="true" ondragstart="drag(event)" ondragover="notAllowDrop(event)">
+                        <p onclick="catchIt">
+                            Matiere2
+                        </p>
+                    </div>
+                </td>
+                <td id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <div id="dra3" draggable="true" ondragstart="drag(event)" ondragover="notAllowDrop(event)">
+                        <p onclick="catchIt">
+                            Matiere3
+                        </p>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    
+</body>
+
+</html>
